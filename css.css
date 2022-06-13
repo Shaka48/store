@@ -1,0 +1,70 @@
+body {
+	margin:0px;
+}
+div {
+	position:relative;
+	height:var(--h, 100px);
+	width:var(--w, 100%);
+	background:var(--bg, orange);
+}
+.one {
+	--h:50px;
+	--w:25%;
+	--bg:orange;
+	transition-duration: 5s;
+	transition-property:all;
+	box-shadow:-80px 60px 5px rgba(0,0,0,0.4);
+}
+.one:hover {
+	background:maroon;
+	transform:translate(200%) translateY(350px) rotate(200deg);
+}
+.two {
+	--h:50px;
+	--w:50%;
+	--bg:teal;
+	line-height:50px;
+}
+.three {
+	--h:50px;
+	--w:75%;
+	--bg:green;
+}
+.four {
+	--h:50px;
+	--w:100%;
+	--bg:black;
+}
+.menu > a:hover {
+	background:lightgrey;
+	color:black;
+}
+.menu > a {
+	text-decoration:none;
+	background:teal;
+	padding:0 5px;
+	color:white;
+	border-left:1px solid black;
+	border-right:1px solid black;
+}
+.menu {
+	white-space:nowrap;
+	overflow:auto;
+}
+.one {
+	transform:translate(50%, 50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
